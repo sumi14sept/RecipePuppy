@@ -18,17 +18,15 @@ Spyder,Microsoft Visual Studio
 
 Steps to run the application:
 
-1.Run createDB.py to create the database dbRecipes.db
+1.Run PythonFiles/createDB.py to create the database dbRecipes.db
 
-2.Run projFetchSave.py to fetch data from RecipePuppy Api and save it to the dbRecipes.db database.
+2.Run PythonFiles/projFetchSave.py to fetch data from RecipePuppy Api and save it to the dbRecipes.db database.
 
 3.Open ProjRecipePuppy.sln and run to view saved data in the browser.
 
 Important Note: 
 
-The dbRecipes.db shoulb be placed as following as the database path in views.py is given this way.
- C:\Myworkspace\proj_RecipePuppy\dbRecipes.db 
-
+The variable 'DATABASE' in views.py contains the path of the dbRecipes.db database.Thus this path should be altered according to the database location.
 
  
  
