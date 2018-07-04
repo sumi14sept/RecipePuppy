@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Recipe Puppy</h1>
+   
+</div>
+
+<div class="row">
+    
+    <table class="table">
+        
+        <thead>
+            <tr>
+                
+                <th scope="col">Recipe Name</th>
+                <th scope="col">URL</th>
+                <th scope="col">Ingredients</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in datalist %}
+            <tr>
+                <!--<th scope="row"></th>-->
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+
+
+</div>
+
+{% endblock %}
