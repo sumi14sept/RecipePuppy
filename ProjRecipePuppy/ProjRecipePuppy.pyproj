@@ -27,11 +27,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="PythonFiles\createDB.py" />
+    <Compile Include="PythonFiles\projFetchSave.py" />
     <Compile Include="runserver.py" />
     <Compile Include="ProjRecipePuppy\__init__.py" />
     <Compile Include="ProjRecipePuppy\views.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PythonFiles\" />
     <Folder Include="ProjRecipePuppy\" />
     <Folder Include="ProjRecipePuppy\static\" />
     <Folder Include="ProjRecipePuppy\static\content\" />
